@@ -46,7 +46,6 @@ def nextWindow():
     window2 = tk.Tk()
     window2.geometry("1920x1080")
     for x in range(len(pokemon) // 3):
-        urllib.request.urlretrieve(pokemon[imageIndex], "resources/pics/" + pokemon[nameIndex] + ".png")
         img = Image.open("resources/pics/" + pokemon[nameIndex] + ".png")
         sizedImg = img.resize((70, 70))
         i = ImageTk.PhotoImage(sizedImg)

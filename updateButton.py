@@ -11,16 +11,14 @@ with open("resources/completepklist.txt", "r") as f:
     lines = f.readlines()
 
 for x in lines:
-    lines[index3] = x
-    print(lines[index3])
-    index3 = index3 + 1
-for x in lines:
-    response = requests.get("https://pokeapi.co/api/v2/pokemon/" + lines[index])
+    temp = lines[index].strip()
+    response = requests.get("https://pokeapi.co/api/v2/pokemon/" + temp)
+    print(response.status_code)
     data = response.text
     parse_json = json.loads(data)
-    images.append(parse_json['sprites']['other']['official-artwork']['front_default'])
-    print(parse_json['sprites']['other']['official-artwork']['front_default'])
+    urllib.request.urlretrieve(parse_json["sprites"]["other"]["official-artwork"]["front_default"], "resources/pics/" + temp + ".png")
     index = index + 1
+print("done")
 
 for x in images:
     f = open("resources/images.txt", "a")
