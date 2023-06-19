@@ -11,9 +11,7 @@ with open("resources/completepklist.txt", "r") as f:
     lines = f.readlines()
 
 for x in lines:
-    temp = x.replace(",", "")
-    temp2 = temp.replace("\"", "")
-    lines[index3] = temp2.strip()
+    lines[index3] = x
     print(lines[index3])
     index3 = index3 + 1
 for x in lines:
