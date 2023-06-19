@@ -8,6 +8,7 @@ def getEntryInput():
 
 def nextWindow():
     pokemonNumber = getEntryInput()
+    print(pokemonNumber)
     window.destroy()
     window2 = tk.Tk()
     window2.mainloop()
