@@ -66,6 +66,10 @@ def nextWindow():
             scrollregion=canvas.bbox("all")
         )
     )
+    def _on_mousewheel(event):
+        canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+    canvas.bind_all("<MouseWheel>", _on_mousewheel)
 
     canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
 
@@ -77,7 +81,7 @@ def nextWindow():
     for x in imgs:
         buttons.append(tk.Button(scrollable_frame, compound= tk.CENTER, image=imgs[index]))
         buttons[index].grid(row=r, column=c, sticky=(tk.N, tk.S, tk.E, tk.W))
-        Hover(buttons[index], pokemon, hoverIndex, imgs[index] )
+        Hover(buttons[index], pokemon, hoverIndex, imgs[index])
         if c != 5:
             c = c + 1
         else:
