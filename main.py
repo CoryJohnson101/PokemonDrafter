@@ -25,11 +25,21 @@ def getPokemon(lines, typeLines, pokemonNumber):
         temp = temp.strip()
         pokemon.append(temp)
         temp2 = typeLines[rand].replace("\n", "")
+        temp2 = temp2.strip()
         pokemon.append(temp2)
         lines.remove(lines[rand])
-        typeLines.remove(typeLines[rand])
+        typeLines.pop(rand)
     return pokemon
 
+def Hover(button, pokemon, position, image):
+    def on_enter(e):
+        button.config(image="", foreground="white", background="black", text=pokemon[position] + "\n" + pokemon[position + 1])
+
+    def on_leave(e):
+        button.config(background="white", text="", image=image)
+
+    button.bind('<Enter>', on_enter)
+    button.bind('<Leave>', on_leave)
 
 def nextWindow():
     pokemonNumber = getEntryInput()
@@ -38,15 +48,17 @@ def nextWindow():
     pokemon = getPokemon(lines, typeLines, newNum)
     nameIndex = 0
     index = 0
+    hoverIndex = 0
     imgs = []
+    buttons = []
     c = 0
     r = 0
     window2 = tk.Tk()
-    window2.geometry("1920x1080")
-    container = tk.Frame(window2, width=1920, height=1080)
+    window2.geometry("1810x960")
+    container = tk.Frame(window2, width=1810, height=960)
     canvas = tk.Canvas(container)
     scrollbar = tk.Scrollbar(container, orient="vertical", command=canvas.yview)
-    scrollable_frame = tk.Frame(canvas, width=1920, height=1080)
+    scrollable_frame = tk.Frame(canvas, width=1810, height=960)
 
     scrollable_frame.bind(
         "<Configure>",
@@ -60,16 +72,19 @@ def nextWindow():
     canvas.configure(yscrollcommand=scrollbar.set)
 
     for x in range(len(pokemon) // 2):
-        imgs.append(ImageTk.PhotoImage(Image.open("resources/pics/" + pokemon[nameIndex] + ".png").resize((311,311))))
+        imgs.append(ImageTk.PhotoImage(Image.open("resources/pics/" + pokemon[nameIndex] + ".png").resize((310,311))))
         nameIndex = nameIndex + 2
     for x in imgs:
-        tk.Button(scrollable_frame, image=imgs[index]).grid(row=r, column=c, sticky=(tk.N, tk.S, tk.E, tk.W))
+        buttons.append(tk.Button(scrollable_frame, compound= tk.CENTER, image=imgs[index]))
+        buttons[index].grid(row=r, column=c, sticky=(tk.N, tk.S, tk.E, tk.W))
+        Hover(buttons[index], pokemon, hoverIndex, imgs[index] )
         if c != 5:
             c = c + 1
         else:
             r = r + 1
             c = 0
         index = index + 1
+        hoverIndex = hoverIndex + 2
 
     container.pack(fill="both", expand=True)
     canvas.pack(side="left", fill="both", expand=True)
