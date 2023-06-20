@@ -45,7 +45,7 @@ def nextWindow():
     window2.geometry("1920x1080")
     container = tk.Frame(window2, width=1920, height=1080)
     canvas = tk.Canvas(container)
-    scrollbar = tk.Scrollbar(container, orient="vertical", command=canvas.yview())
+    scrollbar = tk.Scrollbar(container, orient="vertical", command=canvas.yview)
     scrollable_frame = tk.Frame(canvas, width=1920, height=1080)
 
     scrollable_frame.bind(
@@ -71,7 +71,7 @@ def nextWindow():
             c = 0
         index = index + 1
 
-    container.pack()
+    container.pack(fill="both", expand=True)
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
     window2.mainloop()
