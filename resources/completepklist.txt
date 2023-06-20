@@ -604,9 +604,6 @@
     dachsbun
     arboliva
     squawkabilly
-    squawkabilly-blue-plumage
-    squawkabilly-yellow-plumage
-    squawkabilly-white-plumage
     garganacl
     armarouge
     ceruledge

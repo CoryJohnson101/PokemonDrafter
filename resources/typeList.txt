@@ -604,9 +604,6 @@ normal
 fairy
 grass normal
 normal flying
-normal flying
-normal flying
-normal flying
 rock
 fire psychic
 fire ghost

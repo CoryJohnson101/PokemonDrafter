@@ -1,4 +1,7 @@
 import json
+import os
+import shutil
+
 import PIL.Image
 import urllib.request
 import requests
@@ -10,6 +13,8 @@ index3 = 0
 with open("resources/completepklist.txt", "r") as f:
     lines = f.readlines()
 
+shutil.rmtree('resources/pics')
+os.mkdir('resources/pics')
 for x in lines:
     temp = lines[index].strip()
     response = requests.get("https://pokeapi.co/api/v2/pokemon/" + temp)

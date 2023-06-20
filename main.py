@@ -2,6 +2,7 @@ import random
 import tkinter as tk
 import urllib.request
 from math import sqrt
+import pyglet, os
 
 from PIL import ImageTk, Image
 
@@ -32,11 +33,14 @@ def getPokemon(lines, typeLines, pokemonNumber):
     return pokemon
 
 def Hover(button, pokemon, position, image):
+
+    newImage = image.convert("1", dither=None)
+
     def on_enter(e):
-        button.config(image="", foreground="white", background="black", text=pokemon[position] + "\n" + pokemon[position + 1])
+        button.config(image=newImage, font=('roboto', 18), foreground="white", background="#212121", text=pokemon[position] + "\n" + pokemon[position + 1])
 
     def on_leave(e):
-        button.config(background="white", text="", image=image)
+        button.config(background='#f0f0f0', text="", image=image)
 
     button.bind('<Enter>', on_enter)
     button.bind('<Leave>', on_leave)
