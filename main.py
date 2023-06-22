@@ -20,9 +20,8 @@ with open("resources/namesformatted.txt", "r") as h:
     fullNames = h.readlines()
 
 
-def getPokemon(lines, typeLines, pokemonNumber):
+def getPokemon(lines, typeLines, pokemonNumber, fullNames):
     pokemon = []
-    pokenames = []
     for x in range(pokemonNumber):
         rand = random.randrange(0, len(lines))
         temp = lines[rand].replace("\n", "")
@@ -33,17 +32,19 @@ def getPokemon(lines, typeLines, pokemonNumber):
         pokemon.append(temp2)
         temp3 = fullNames[rand].replace("\n", "")
         temp3 = temp3.strip()
-        pokenames.append(temp3)
+        pokemon.append(temp3)
+        fullNames.pop(rand)
         lines.remove(lines[rand])
         typeLines.pop(rand)
-    return pokemon, pokenames
+    return pokemon
+
 
 def Hover(button, pokemon, position, image):
-
     # newImage = image.convert("1", dither=None)
 
     def on_enter(e):
-        button.config(image='', font=('roboto', 18), foreground="white", background="#212121", text=pokemon[position] + "\n" + pokemon[position + 1])
+        button.config(image='', font=('roboto', 18), foreground="white", background="#212121",
+                      text=pokemon[position] + "\n" + pokemon[position - 1])
 
     def on_leave(e):
         button.config(background='#f0f0f0', text="", image=image)
@@ -51,14 +52,15 @@ def Hover(button, pokemon, position, image):
     button.bind('<Enter>', on_enter)
     button.bind('<Leave>', on_leave)
 
+
 def nextWindow():
     pokemonNumber = getEntryInput()
     window.destroy()
     newNum = int(pokemonNumber)
-    pokemon = getPokemon(lines, typeLines, newNum)
+    pokemon = getPokemon(lines, typeLines, newNum, fullNames)
     nameIndex = 0
     index = 0
-    hoverIndex = 0
+    hoverIndex = 2
     imgs = []
     buttons = []
     c = 0
@@ -76,6 +78,7 @@ def nextWindow():
             scrollregion=canvas.bbox("all")
         )
     )
+
     def _on_mousewheel(event):
         canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
 
@@ -85,11 +88,11 @@ def nextWindow():
 
     canvas.configure(yscrollcommand=scrollbar.set)
 
-    for x in range(len(pokemon) // 2):
-        imgs.append(ImageTk.PhotoImage(Image.open("resources/pics/" + pokemon[nameIndex] + ".png").resize((310,311))))
-        nameIndex = nameIndex + 2
+    for x in range(len(pokemon) // 3):
+        imgs.append(ImageTk.PhotoImage(Image.open("resources/pics/" + pokemon[nameIndex] + ".png").resize((310, 311))))
+        nameIndex = nameIndex + 3
     for x in imgs:
-        buttons.append(tk.Button(scrollable_frame, compound= tk.CENTER, image=imgs[index]))
+        buttons.append(tk.Button(scrollable_frame, compound=tk.CENTER, image=imgs[index]))
         buttons[index].grid(row=r, column=c, sticky=(tk.N, tk.S, tk.E, tk.W))
         Hover(buttons[index], pokemon, hoverIndex, imgs[index])
         if c != 5:
@@ -98,13 +101,12 @@ def nextWindow():
             r = r + 1
             c = 0
         index = index + 1
-        hoverIndex = hoverIndex + 2
+        hoverIndex = hoverIndex + 3
 
     container.pack(fill="both", expand=True)
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
     window2.mainloop()
-
 
 
 window = tk.Tk()
