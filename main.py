@@ -16,10 +16,13 @@ with open("resources/completepklist.txt", "r") as f:
     lines = f.readlines()
 with open("resources/typeList.txt", "r") as g:
     typeLines = g.readlines()
+with open("resources/namesformatted.txt", "r") as h:
+    fullNames = h.readlines()
 
 
 def getPokemon(lines, typeLines, pokemonNumber):
     pokemon = []
+    pokenames = []
     for x in range(pokemonNumber):
         rand = random.randrange(0, len(lines))
         temp = lines[rand].replace("\n", "")
@@ -28,9 +31,12 @@ def getPokemon(lines, typeLines, pokemonNumber):
         temp2 = typeLines[rand].replace("\n", "")
         temp2 = temp2.strip()
         pokemon.append(temp2)
+        temp3 = fullNames[rand].replace("\n", "")
+        temp3 = temp3.strip()
+        pokenames.append(temp3)
         lines.remove(lines[rand])
         typeLines.pop(rand)
-    return pokemon
+    return pokemon, pokenames
 
 def Hover(button, pokemon, position, image):
 
