@@ -308,7 +308,7 @@
     Cresselia
     Manaphy
     Darkrai
-    Shaymin-Land
+    Shaymin
     Shaymin-Sky
     Arceus
     Victini
@@ -339,9 +339,9 @@
     Whimsicott
     Lilligant
     Lilligant-Hisui
-    Basculin-red-striped
-    Basculin-blue-striped
-    Basculin-white-striped
+    Basculin-Red
+    Basculin-Blue
+    Basculin-White
     Krookodile
     Darmanitan
     Darmanitan-Galar
@@ -404,10 +404,9 @@
     Kyurem
     Kyurem-white
     Kyurem-black
-    Keldeo-ordinary
-    Keldeo-resolute
-    Meloetta-aria
-    Meloetta-pirouette
+    Keldeo
+    Meloetta
+    Meloetta-Pirouette
     Genesect
     Chesnaught
     Delphox
@@ -422,8 +421,7 @@
     Furfrou
     Meowstic-male
     Meowstic-female
-    Aegislash-shield
-    Aegislash-blade
+    Aegislash
     Aromatisse
     Slurpuff
     Malamar
@@ -441,18 +439,17 @@
     Goodra-Hisui
     Klefki
     Trevenant
-    Gourgeist-large
+    Gourgeist
     Avalugg
     Avalugg-Hisui
     Noivern
     Xerneas
     Yveltal
-    Zygarde-50
-    Zygarde-10
-    Zygarde-complete
+    Zygarde
+    Zygarde-10%
     Diancie
     Hoopa
-    Hoopa-unbound
+    Hoopa-Unbound
     Volcanion
     Decidueye
     Decidueye-Hisui
@@ -462,15 +459,15 @@
     Gumshoos
     Vikavolt
     Crabominable
-    Oricorio-baile
-    Oricorio-pom-pom
-    Oricorio-pau
-    Oricorio-sensu
+    Oricorio-Baile
+    Oricorio-Pom-Pom
+    Oricorio-Pa'u
+    Oricorio-Sensu
     Ribombee
-    Lycanroc-midday
-    Lycanroc-midnight
-    Lycanroc-dusk
-    Wishiwashi-school
+    Lycanroc-Midday
+    Lycanroc-Midnight
+    Lycanroc-Dusk
+    Wishiwashi
     Toxapex
     Mudsdale
     Araquanid
@@ -485,21 +482,21 @@
     Golisopod
     Palossand
     Pyukumuku
-    Type-null
+    Type: Null
     Silvally
     Minior-red
     Komala
     Turtonator
     Togedemaru
-    Mimikyu-disguised
+    Mimikyu
     Bruxish
     Drampa
     Dhelmise
     Kommo-o
-    Tapu-koko
-    Tapu-lele
-    Tapu-bulu
-    Tapu-fini
+    Tapu Koko
+    Tapu Lele
+    Tapu Bulu
+    Tapu Fini
     Cosmoem
     Solgaleo
     Lunala
@@ -511,9 +508,9 @@
     Kartana
     Guzzlord
     Necrozma
-    Necrozma-dusk
-    Necrozma-dawn
-    Necrozma-ultra
+    Necrozma-Dusk Mane
+    Necrozma-Dawn Wings
+    Necrozma-Ultra
     Magearna
     Marshadow
     Naganadel
@@ -538,8 +535,7 @@
     Sandaconda
     Cramorant
     Barraskewda
-    Toxtricity-amped
-    Toxtricity-low-key
+    Toxtricity
     Centiskorch
     Grapploct
     Polteageist
@@ -549,17 +545,17 @@
     Perrserker
     Cursola
     Sirfetchd
-    Mr-rime
+    Mr. Rime
     Runerigus
     Alcremie
     Falinks
     Pincurchin
     Frosmoth
     Stonjourner
-    Eiscue-ice
-    Indeedee-male
-    Indeedee-female
-    Morpeko-full-belly
+    Eiscue
+    Indeedee-Male
+    Indeedee-Female
+    Morpeko
     Copperajah
     Dracozolt
     Arctozolt
@@ -568,26 +564,25 @@
     Duraludon
     Dragapult
     Zacian
-    Zacian-crowned
+    Zacian-Crowned
     Zamazenta
-    Zamazenta-crowned
+    Zamazenta-Crowned
     Eternatus
-    Eternatus-eternamax
-    Urshifu-single-strike
-    Urshifu-rapid-strike
+    Urshifu-Single-Strike
+    Urshifu-Rapid-Strike
     Zarude
     Regieleki
     Regidrago
     Glastrier
     Spectrier
     Calyrex
-    Calyrex-ice
-    Calyrex-shadow
+    Calyrex-Ice
+    Calyrex-Shadow
     Wyrdeer
     Kleavor
     Ursaluna
-    Basculegion-male
-    Basculegion-female
+    Basculegion-Male
+    Basculegion-Female
     Sneasler
     Overqwil
     Enamorus-Incarnate
@@ -596,7 +591,7 @@
     Skeledirge
     Quaquaval
     Oinkologne
-    Oinkologne-female
+    Oinkologne-Female
     Spidops
     Lokix
     Pawmot

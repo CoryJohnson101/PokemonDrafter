@@ -405,7 +405,6 @@ dragon ice
 dragon ice
 dragon ice
 water fighting
-water fighting
 normal psychic
 normal fighting
 bug steel
@@ -422,7 +421,6 @@ fighting dark
 normal
 psychic
 psychic
-steel ghost
 steel ghost
 fairy
 fairy
@@ -447,7 +445,6 @@ ice rock
 flying dragon
 fairy
 dark flying
-dragon ground
 dragon ground
 dragon ground
 rock fairy
@@ -539,7 +536,6 @@ ground
 flying water
 water
 electric poison
-electric poison
 fire bug
 fighting
 ghost
@@ -571,7 +567,6 @@ fairy
 fairy steel
 fighting
 fighting steel
-poison dragon
 poison dragon
 fighting dark
 fighting water
