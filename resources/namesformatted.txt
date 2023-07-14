@@ -415,7 +415,6 @@
     Avalugg
     Avalugg-Hisui
     Noivern
-    Zygarde
     Zygarde-10%
     Diancie
     Hoopa

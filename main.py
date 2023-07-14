@@ -43,7 +43,7 @@ def Hover(button, pokemon, position, image):
     # newImage = image.convert("1", dither=None)
 
     def on_enter(e):
-        button.config(image='', font=('roboto', 24), foreground="white", background="#212121",
+        button.config(image='', font=('roboto', 22), foreground="white", background="#212121",
                       text=pokemon[position] + "\n" + pokemon[position - 1])
 
     def on_leave(e):
