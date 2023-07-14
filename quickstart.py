@@ -4,6 +4,7 @@ import os.path
 
 import google.auth.transport.requests
 import requests
+from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
@@ -17,7 +18,7 @@ SAMPLE_SPREADSHEET_ID = '1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms'
 SAMPLE_RANGE_NAME = 'Class Data!A2:E'
 
 
-def main():
+def Main():
     """Shows basic usage of the Sheets API.
     Prints values from a sample spreadsheet.
     """
@@ -61,4 +62,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    Main()
