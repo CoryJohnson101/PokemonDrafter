@@ -92,7 +92,6 @@ fighting flying
 fire flying
 dark flying
 dragon flying
-
 psychic
 grass
 fire
@@ -151,8 +150,6 @@ electric
 fire
 water
 rock dark
-
-
 psychic grass
 grass
 fire fighting
@@ -223,16 +220,8 @@ ice
 steel
 dragon psychic
 dragon psychic
-
-
-
-
-
 steel psychic
-
-
 psychic
-
 grass ground
 fire fighting
 water steel
@@ -297,20 +286,11 @@ electric grass
 psychic
 psychic
 psychic
-
-
-
-
 fire steel
 normal
-
-
 psychic
 water
-
 grass
-
-
 psychic fire
 grass
 fire fighting
@@ -394,20 +374,12 @@ steel fighting
 rock fighting
 grass fighting
 flying
-
 electric flying
 electric flying
-
-
-
 ground flying
-
-
-
 water fighting
 normal psychic
 normal fighting
-
 grass fighting
 fire psychic
 water dark
@@ -443,8 +415,6 @@ ghost grass
 ice
 ice rock
 flying dragon
-
-
 dragon ground
 dragon ground
 rock fairy
@@ -498,28 +468,18 @@ psychic fairy
 grass fairy
 water fairy
 psychic
-
-
 rock poison
 bug fighting
-
 electric
 steel flying
 grass steel
 dark dragon
 psychic
-
-
-
-
-
-
 rock steel
 fire ghost
 electric
 steel
 grass
-
 water
 normal
 flying steel
@@ -559,25 +519,14 @@ electric dark
 steel
 electric dragon
 electric ice
-
 water ice
 steel dragon
-
-fairy
-fairy steel
-fighting
-fighting steel
-
-
 fighting water
 dark grass
 electric
 dragon
 ice
-
 psychic grass
-
-
 normal psychic
 bug rock
 ground normal
@@ -658,18 +607,12 @@ grass psychic
 grass poison
 fire dragon
 fire flying
-
 bug poison
 normal flying
-
 water psychic
-
-
 bug flying
 water dark
 rock flying
-
-
 electric dragon
 steel ground
 bug steel
@@ -677,7 +620,6 @@ bug fighting
 dark fire
 rock dark
 grass dragon
-fire fighting
 water ground
 psychic fairy
 dark ghost
@@ -690,14 +632,11 @@ fire ground
 dragon fairy
 ghost
 dark
-
-
 dragon psychic
 dragon psychic
 dragon flying
 normal fighting
 dragon ground
-
 grass ice
 psychic fighting
 normal fairy
