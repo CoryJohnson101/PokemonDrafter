@@ -92,7 +92,7 @@ fighting flying
 fire flying
 dark flying
 dragon flying
-psychic
+
 psychic
 grass
 fire
@@ -151,8 +151,8 @@ electric
 fire
 water
 rock dark
-psychic flying
-fire flying
+
+
 psychic grass
 grass
 fire fighting
@@ -223,16 +223,16 @@ ice
 steel
 dragon psychic
 dragon psychic
-water
-water
-ground
-ground fire
-dragon flying
+
+
+
+
+
 steel psychic
+
+
 psychic
-psychic
-psychic
-psychic
+
 grass ground
 fire fighting
 water steel
@@ -297,20 +297,20 @@ electric grass
 psychic
 psychic
 psychic
-steel dragon
-steel dragon
-water dragon
-water dragon
+
+
+
+
 fire steel
 normal
-ghost dragon
-ghost dragon
+
+
 psychic
 water
-dark
+
 grass
-grass flying
-normal
+
+
 psychic fire
 grass
 fire fighting
@@ -394,20 +394,20 @@ steel fighting
 rock fighting
 grass fighting
 flying
-flying
+
 electric flying
 electric flying
-dragon fire
-dragon electric
+
+
+
 ground flying
-ground flying
-dragon ice
-dragon ice
-dragon ice
+
+
+
 water fighting
 normal psychic
 normal fighting
-bug steel
+
 grass fighting
 fire psychic
 water dark
@@ -443,8 +443,8 @@ ghost grass
 ice
 ice rock
 flying dragon
-fairy
-dark flying
+
+
 dragon ground
 dragon ground
 rock fairy
@@ -498,28 +498,28 @@ psychic fairy
 grass fairy
 water fairy
 psychic
-psychic steel
-psychic ghost
+
+
 rock poison
 bug fighting
-bug fighting
+
 electric
 steel flying
 grass steel
 dark dragon
 psychic
-psychic steel
-psychic ghost
-psychic dragon
-steel fairy
-fighting ghost
-poison dragon
+
+
+
+
+
+
 rock steel
 fire ghost
 electric
 steel
 grass
-fire
+
 water
 normal
 flying steel
@@ -559,25 +559,25 @@ electric dark
 steel
 electric dragon
 electric ice
-water dragon
+
 water ice
 steel dragon
-dragon ghost
+
 fairy
 fairy steel
 fighting
 fighting steel
-poison dragon
-fighting dark
+
+
 fighting water
 dark grass
 electric
 dragon
 ice
-ghost
+
 psychic grass
-psychic ice
-psychic ghost
+
+
 normal psychic
 bug rock
 ground normal
@@ -658,18 +658,18 @@ grass psychic
 grass poison
 fire dragon
 fire flying
-water
+
 bug poison
 normal flying
-psychic
+
 water psychic
-ghost poison
-normal
+
+
 bug flying
 water dark
 rock flying
-psychic fighting
-psychic
+
+
 electric dragon
 steel ground
 bug steel
@@ -690,14 +690,14 @@ fire ground
 dragon fairy
 ghost
 dark
-dragon flying
-steel psychic
+
+
 dragon psychic
 dragon psychic
 dragon flying
 normal fighting
 dragon ground
-fighting steel
+
 grass ice
 psychic fighting
 normal fairy

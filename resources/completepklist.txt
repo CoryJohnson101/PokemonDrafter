@@ -92,7 +92,7 @@
     moltres
     moltres-galar
     dragonite
-    mewtwo
+
     mew
     meganium
     typhlosion
@@ -151,8 +151,8 @@
     entei
     suicune
     tyranitar
-    lugia
-    ho-oh
+
+
     celebi
     sceptile
     blaziken
@@ -223,16 +223,16 @@
     registeel
     latias
     latios
-    kyogre
-    kyogre-primal
-    groudon
-    groudon-primal
-    rayquaza
+
+
+
+
+
     jirachi
-    deoxys-normal
-    deoxys-attack
+
+
     deoxys-defense
-    deoxys-speed
+
     torterra
     infernape
     empoleon
@@ -297,20 +297,20 @@
     uxie
     mesprit
     azelf
-    dialga
-    dialga-origin
-    palkia
-    palkia-origin
+
+
+
+
     heatran
     regigigas
-    giratina-altered
-    giratina-origin
+
+
     cresselia
     manaphy
-    darkrai
+
     shaymin-land
-    shaymin-sky
-    arceus
+
+
     victini
     serperior
     emboar
@@ -394,20 +394,20 @@
     terrakion
     virizion
     tornadus-incarnate
-    tornadus-therian
+
     thundurus-incarnate
     thundurus-therian
-    reshiram
-    zekrom
-    landorus-incarnate
+
+
+
     landorus-therian
-    kyurem
-    kyurem-white
-    kyurem-black
+
+
+
     keldeo-ordinary
     meloetta-aria
     meloetta-pirouette
-    genesect
+
     chesnaught
     delphox
     greninja
@@ -443,8 +443,8 @@
     avalugg
     avalugg-hisui
     noivern
-    xerneas
-    yveltal
+
+
     zygarde-50
     zygarde-10
     diancie
@@ -498,28 +498,28 @@
     tapu-bulu
     tapu-fini
     cosmoem
-    solgaleo
-    lunala
+
+
     nihilego
     buzzwole
-    pheromosa
+
     xurkitree
     celesteela
     kartana
     guzzlord
     necrozma
-    necrozma-dusk
-    necrozma-dawn
-    necrozma-ultra
-    magearna
-    marshadow
-    naganadel
+
+
+
+
+
+
     stakataka
     blacephalon
     zeraora
     melmetal
     rillaboom
-    cinderace
+
     inteleon
     greedent
     corviknight
@@ -559,25 +559,25 @@
     copperajah
     dracozolt
     arctozolt
-    dracovish
+
     arctovish
     duraludon
-    dragapult
-    zacian
-    zacian-crowned
-    zamazenta
-    zamazenta-crowned
-    eternatus
-    urshifu-single-strike
+
+
+
+
+
+
+
     urshifu-rapid-strike
     zarude
     regieleki
     regidrago
     glastrier
-    spectrier
+
     calyrex
-    calyrex-ice
-    calyrex-shadow
+
+
     wyrdeer
     kleavor
     ursaluna
@@ -658,18 +658,18 @@
     venusaur-mega
     charizard-mega-x
     charizard-mega-y
-    blastoise-mega
+
     beedrill-mega
     pidgeot-mega
-    alakazam-mega
+
     slowbro-mega
-    gengar-mega
-    kangaskhan-mega
+
+
     pinsir-mega
     gyarados-mega
     aerodactyl-mega
-    mewtwo-mega-x
-    mewtwo-mega-y
+
+
     ampharos-mega
     steelix-mega
     scizor-mega
@@ -690,14 +690,14 @@
     altaria-mega
     banette-mega
     absol-mega
-    salamence-mega
-    metagross-mega
+
+
     latias-mega
     latios-mega
     rayquaza-mega
     lopunny-mega
     garchomp-mega
-    lucario-mega
+
     abomasnow-mega
     gallade-mega
     audino-mega
