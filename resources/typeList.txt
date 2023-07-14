@@ -416,6 +416,7 @@ ice
 ice rock
 flying dragon
 dragon ground
+dragon ground
 rock fairy
 psychic ghost
 psychic dark

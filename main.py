@@ -3,6 +3,8 @@ import tkinter as tk
 import urllib.request
 from math import sqrt
 import pyglet, os
+import easygui
+import os
 
 from PIL import ImageTk, Image
 
