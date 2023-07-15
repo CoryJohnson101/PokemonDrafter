@@ -3,8 +3,12 @@ import tkinter as tk
 import urllib.request
 from math import sqrt
 import pyglet, os
+import easygui
+import os
 
 from PIL import ImageTk, Image
+
+from quickstart import Main
 
 
 def getEntryInput():
@@ -67,7 +71,7 @@ def nextWindow():
     r = 0
     window2 = tk.Tk()
     window2.geometry("1810x960")
-    container = tk.Frame(window2, width=1810, height=960)
+    container = tk.Frame(window2, width=1810, height=860)
     canvas = tk.Canvas(container)
     scrollbar = tk.Scrollbar(container, orient="vertical", command=canvas.yview)
     scrollable_frame = tk.Frame(canvas, width=1810, height=960)
@@ -87,21 +91,33 @@ def nextWindow():
     canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
 
     canvas.configure(yscrollcommand=scrollbar.set)
-
+    first = True
     for x in range(len(pokemon) // 3):
         imgs.append(ImageTk.PhotoImage(Image.open("resources/pics/" + pokemon[nameIndex] + ".png").resize((310, 311))))
         nameIndex = nameIndex + 3
-    for x in imgs:
-        buttons.append(tk.Button(scrollable_frame, compound=tk.CENTER, image=imgs[index]))
-        buttons[index].grid(row=r, column=c, sticky=(tk.N, tk.S, tk.E, tk.W))
-        Hover(buttons[index], pokemon, hoverIndex, imgs[index])
-        if c != 5:
-            c = c + 1
+    first = True
+    for x in range(0, len(imgs) + 1):
+        if first:
+            first = False
+            newImg = ImageTk.PhotoImage(Image.open("resources/google.jpg").resize((310, 311)))
+            signIn = tk.Button(scrollable_frame, compound=tk.CENTER, image=newImg, command=Main)
+            signIn.grid(row=r, column=c, sticky=(tk.N, tk.S, tk.E, tk.W))
+            if c != 5:
+                c = c + 1
+            else:
+                r = r + 1
+                c = 0
         else:
-            r = r + 1
-            c = 0
-        index = index + 1
-        hoverIndex = hoverIndex + 3
+            buttons.append(tk.Button(scrollable_frame, compound=tk.CENTER, image=imgs[index]))
+            buttons[index].grid(row=r, column=c, sticky=(tk.N, tk.S, tk.E, tk.W))
+            Hover(buttons[index], pokemon, hoverIndex, imgs[index])
+            if c != 5:
+                c = c + 1
+            else:
+                r = r + 1
+                c = 0
+            index = index + 1
+            hoverIndex = hoverIndex + 3
 
     container.pack(fill="both", expand=True)
     canvas.pack(side="left", fill="both", expand=True)
