@@ -28,7 +28,7 @@ def UpdateImageList():
     print("done")
 
 
-#this is probably trash
+#probably for like creating the directory automatically maybe??? think
     for x in images:
         f = open("resources/images.txt", "a")
         f.write(images[index2] + "\n")
@@ -38,13 +38,14 @@ def UpdateImageList():
 
 # UpdateImageList()
 def UpdateSpriteList():
-    images = []
-    index = 0
-    index2 = 0
-    shutil.rmtree('resources/sprites')
-    os.mkdir('resources/sprites')
-    for x in lines:
-        try:
+    val = input("you sure dog?")
+    if val == 'y':
+        images = []
+        index = 0
+        index2 = 0
+        shutil.rmtree('resources/sprites')
+        os.mkdir('resources/sprites')
+        for x in lines:
             temp = lines[index].strip()
             response = requests.get("https://pokeapi.co/api/v2/pokemon/" + temp)
             data = response.text
@@ -52,20 +53,16 @@ def UpdateSpriteList():
             urllib.request.urlretrieve(parse_json["sprites"]["front_default"], "resources/sprites/" + temp + ".png")
             print(index)
             index = index + 1
-        except TypeError as e:
-            temp = "dedenne"
-            response = requests.get("https://pokeapi.co/api/v2/pokemon/" + temp)
-            data = response.text
-            parse_json = json.loads(data)
-            urllib.request.urlretrieve(parse_json["sprites"]["front_default"], "resources/sprites/" + temp + ".png")
-    print("done part 2")
+        print("done part 2")
 
-    for x in images:
-        f = open("resources/images.txt", "a")
-        f.write(images[index2] + "\n")
-        f.close()
-        index2 = index2 + 1
-        print("added" + str(index2))
+        for x in images:
+            f = open("resources/images.txt", "a")
+            f.write(images[index2] + "\n")
+            f.close()
+            index2 = index2 + 1
+            print("added" + str(index2))
+    elif val == 'n':
+        print("gotchu dog")
 
 UpdateSpriteList()
 # def UpdatePokemonList():

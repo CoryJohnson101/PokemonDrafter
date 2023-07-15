@@ -1,6 +1,8 @@
 import requests
 from Google import Create_Service
 import os
+from InfoGetter import getInfo
+
 
 def CreateGoogleSheet():
 
@@ -73,6 +75,4 @@ def populateSheet():
     ).execute
 
 
-def getInfo():
-    values = []
-    return values
+

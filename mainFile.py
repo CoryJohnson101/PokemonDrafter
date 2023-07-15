@@ -2,13 +2,10 @@ import random
 import tkinter as tk
 import urllib.request
 from math import sqrt
-import pyglet, os
+import pyglet
 import easygui
-import os
-
+from InfoHolder import *
 from PIL import ImageTk, Image
-
-from quickstart import Main
 
 
 def getEntryInput():
@@ -99,8 +96,8 @@ def nextWindow():
     for x in range(0, len(imgs) + 1):
         if first:
             first = False
-            newImg = ImageTk.PhotoImage(Image.open("resources/google.jpg").resize((310, 311)))
-            signIn = tk.Button(scrollable_frame, compound=tk.CENTER, image=newImg, command=Main)
+            newImg = ImageTk.PhotoImage(Image.open("resources/googlesheet.png").resize((310, 311)))
+            signIn = tk.Button(scrollable_frame, compound=tk.CENTER, image=newImg, command=createsheet)
             signIn.grid(row=r, column=c, sticky=(tk.N, tk.S, tk.E, tk.W))
             if c != 5:
                 c = c + 1

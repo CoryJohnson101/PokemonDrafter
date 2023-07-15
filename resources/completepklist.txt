@@ -416,7 +416,6 @@
     avalugg-hisui
     noivern
     zygarde-50
-    zygarde-10
     diancie
     hoopa
     hoopa-unbound
